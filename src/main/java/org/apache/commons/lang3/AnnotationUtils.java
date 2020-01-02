@@ -120,7 +120,7 @@ public class AnnotationUtils {
      * {@code null}
      */
     public static boolean equals(final Annotation a1, final Annotation a2) {
-        if (a1 == a2) {
+        if (a1.toString().equals(a2.toString())) {
             return true;
         }
         if (a1 == null || a2 == null) {
